@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Exercise.Csharp;
+
+
 
 namespace Exercise
 {
@@ -14,6 +17,22 @@ namespace Exercise
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            /**
+             * 
+             * 
+             * 
+             */
+            Student SvH = new Student();
+
+            SvH.Namesv = "Hoa Khoai To";
+            SvH.Password = "123a";
+            MessageBox.Show(SvH.Password);
+             
+        
         }
     }
 }
